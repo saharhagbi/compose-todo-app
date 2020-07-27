@@ -1,5 +1,5 @@
 FROM node:12-alpine
 WORKDIR /app
-COPY package.json .
+COPY . .
 RUN npm install --production
 CMD ["node", "src/index.js"]
