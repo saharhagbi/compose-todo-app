@@ -2,8 +2,7 @@ version: '2'
 services:
   to-do-app:
     container_name: to-do-app
-    #image: saharhagbi/to-do-app:to-do-app_image
-    build: .
+    image: saharhagbi/to-do-app:1.1
     volumes:
       - .:/usr/app/
     ports:
@@ -16,10 +15,5 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     ports:
-<<<<<<< HEAD
       - "80:80"
     restart: always
-=======
-      - 80:80
-    restart: always
->>>>>>> be52b2857a148f7c2e7d1c316dd69032cbfabf9c
