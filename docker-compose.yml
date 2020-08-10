@@ -16,5 +16,10 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     ports:
+<<<<<<< HEAD
       - "80:80"
     restart: always
+=======
+      - 80:80
+    restart: always
+>>>>>>> be52b2857a148f7c2e7d1c316dd69032cbfabf9c
